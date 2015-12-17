@@ -79,7 +79,14 @@ class MediaPostMessage extends AppModel
         $data = array(
             'lista' => $listId,
         );
-        if(!empty($conditions)) $data['filtro'] = $conditions;
+        if(!empty($conditions)) {
+
+            if(!empty($conditions['schedule'])) {
+                $data['datahora_envio'] = $conditions['schedule'];
+            }
+
+            $data['filtro'] = $conditions;
+        }
         return $this->dataSource->api->put("envio/cod/".$messageId, $data);
     }
 

@@ -7,8 +7,7 @@ It uses the [Diego Matos](https://github.com/diegosmts) [MediaPost-API](https://
 
 *Configuration*
 --------
-> Download the plugin with git clone, or downloading zip file;
-> Save into the **app/Plugin/MediaPost** path;
+> Save in the  folder **app/Plugin/MediaPost**, with git clone or downloading the zip source;
 > Load plugin in app/Config/bootstrap.php:d
 > ```php
 > CakePlugin::load('MediaPost');
