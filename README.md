@@ -14,7 +14,7 @@ It uses the [Diego Matos](https://github.com/diegosmts) [MediaPost-API](https://
 > CakePlugin::load('MediaPost');
 >```
 > Use the *bootstrap.sample.php* to configure consumerKey, consumerSecret, token and tokenSecret;
-> **or** use:
+> **or** place in app/Config/bootstrap.php:
 >```php
 > Configure::write('MediaPost', array(
  >   'consumerKey' => 'consumer-key-here',
@@ -23,6 +23,12 @@ It uses the [Diego Matos](https://github.com/diegosmts) [MediaPost-API](https://
  >   'tokenSecret' => 'token-secret-here'
 > ));
 >```
+> Place in app/Config/database.php:
+> ```php
+> public $mediapost = array(
+>      'datasource' => 'MediaPost.MediaPostSource'
+> );
+> ```
 
 *Usage Example*
 --------
