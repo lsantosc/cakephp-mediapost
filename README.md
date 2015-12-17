@@ -8,7 +8,7 @@ It uses the [Diego Matos](https://github.com/diegosmts) [MediaPost-API](https://
 *Configuration*
 --------
 > Save in the  folder **app/Plugin/MediaPost**, with git clone or downloading the zip source;
-> Load plugin in app/Config/bootstrap.php:d
+> Load plugin in app/Config/bootstrap.php:
 > ```php
 > CakePlugin::load('MediaPost');
 >```
@@ -16,10 +16,10 @@ It uses the [Diego Matos](https://github.com/diegosmts) [MediaPost-API](https://
 > **or** place in app/Config/bootstrap.php:
 >```php
 > Configure::write('MediaPost', array(
- >   'consumerKey' => 'consumer-key-here',
- >  'consumerSecret' => 'consumer-secret-here',
- >   'token' => 'token-here',
- >   'tokenSecret' => 'token-secret-here'
+>   'consumerKey' => 'consumer-key-here',
+>   'consumerSecret' => 'consumer-secret-here',
+>   'token' => 'token-here',
+>   'tokenSecret' => 'token-secret-here'
 > ));
 >```
 > Place in app/Config/database.php:
